@@ -1,8 +1,8 @@
 Function SIMILARITY(string_a, string_b)
     match_index = 0
     total_index = 0
-    getstring_a = Trim(string_a)
-    getstring_b = Trim(string_b)
+    getstring_a = WorksheetFunction.Trim(string_a)
+    getstring_b = WorksheetFunction.Trim(string_b)
     len_a = Len(getstring_a)
     len_b = Len(getstring_b)
     number_lock = 0

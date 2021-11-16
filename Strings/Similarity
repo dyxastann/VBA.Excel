@@ -1,14 +1,16 @@
 Function SIMILARITY(string_a, string_b)
     match_index = 0
     total_index = 0
-    len_a = Len(string_a)
-    len_b = Len(string_b)
+    getstring_a = Trim(string_a)
+    getstring_b = Trim(string_b)
+    len_a = Len(getstring_a)
+    len_b = Len(getstring_b)
     number_lock = 1
     For pointer_a = 1 To len_a
         total_index = total_index + 1
         match_found = 0
         For pointer_b = number_lock To len_b
-        If InStr(Mid(string_a, pointer_a, 1), Mid(string_b, pointer_b, 1)) > 0 And match_found < 1 Then
+        If InStr(Mid(getstring_a, pointer_a, 1), Mid(getstring_b, pointer_b, 1)) > 0 And match_found < 1 Then
             match_index = match_index + 1
             number_lock = pointer_b
             match_found = 1

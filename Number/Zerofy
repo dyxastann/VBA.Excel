@@ -1,0 +1,7 @@
+Function ZEROFY(number)
+   If number <= 0 Then
+     ZEROFY = 0
+   Else
+     ZEROFY = number
+   End If
+End Function
